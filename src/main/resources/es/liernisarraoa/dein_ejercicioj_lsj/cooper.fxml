@@ -33,6 +33,16 @@
          </children>
       </HBox>
    </top>
+   <center>
+      <ImageView fx:id="foto" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@Imagenes/coches/miniBlazingRed.png" />
+         </image>
+         <BorderPane.margin>
+            <Insets left="50.0" top="50.0" />
+         </BorderPane.margin>
+      </ImageView>
+   </center>
    <left>
       <ImageView fx:id="btnLuces" fitHeight="30.0" fitWidth="30.0" onMouseClicked="#cambiarLuces" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
          <image>
