@@ -15,6 +15,7 @@ public class Cooper extends Application {
         Scene scene = new Scene(fxmlLoader.load(), 600, 400);
         stage.setTitle("Cooper!");
         stage.getIcons().add(new Image(String.valueOf(Cooper.class.getResource("Imagenes/Cooper.png"))));
+        stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
     }

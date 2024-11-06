@@ -4,6 +4,7 @@ module es.liernisarraoa.dein_ejercicioj_lsj {
 
     requires org.controlsfx.controls;
     requires org.kordamp.ikonli.javafx;
+    requires java.desktop;
 
     opens es.liernisarraoa.dein_ejercicioj_lsj to javafx.fxml;
     exports es.liernisarraoa.dein_ejercicioj_lsj;

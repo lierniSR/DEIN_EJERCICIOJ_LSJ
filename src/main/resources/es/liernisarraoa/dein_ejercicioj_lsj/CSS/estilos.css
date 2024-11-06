@@ -1,0 +1,4 @@
+/*Para que un boton con imagen no se vea el fondo del boton*/
+Button {
+    -fx-background-color: transparent; /* Fondo transparente */
+}
