@@ -8,8 +8,15 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
 
+/**
+ * Controlador de Cooper
+ * En los controladores suele estar el funcionamiento de la aplicacion, es decir los metodos de escuchadores o listeners.
+ *
+ * @author Lierni
+ * @version 1.0
+ */
 public class ControladorCooper {
-    private Image imagen = new Image(String.valueOf(Cooper.class.getResource("Imagenes/lucesOff.png")));
+    private final Image igLuz = new Image(String.valueOf(Cooper.class.getResource("Imagenes/lucesOff.png")));
 
     @FXML
     public Button colorGris;
@@ -49,33 +56,48 @@ public class ControladorCooper {
     public ImageView imagenAzulElectrico;
     @FXML
     public ImageView imagenRojo;
+    @FXML
+    public ImageView coche;
 
     public void cambiarRojo(ActionEvent actionEvent) {
+        coche.setImage(new Image(String.valueOf(Cooper.class.getResource("Imagenes/coches/miniBlazingRed.png"))));
     }
 
     public void cambiarAzulElectrico(ActionEvent actionEvent) {
+        coche.setImage(new Image(String.valueOf(Cooper.class.getResource("Imagenes/coches/miniElectricBlue.png"))));
     }
 
     public void cambiarAzulLuxury(ActionEvent actionEvent) {
+        coche.setImage(new Image(String.valueOf(Cooper.class.getResource("Imagenes/coches/miniLapisluxuryBlue.png"))));
     }
 
     public void cambiarNegro(ActionEvent actionEvent) {
+        coche.setImage(new Image(String.valueOf(Cooper.class.getResource("Imagenes/coches/miniMidnightBlack.png"))));
     }
 
     public void cambiarGris(ActionEvent actionEvent) {
+        coche.setImage(new Image(String.valueOf(Cooper.class.getResource("Imagenes/coches/miniMoonwalkGrey.png"))));
     }
 
     public void cambiarBlanco(ActionEvent actionEvent) {
+        coche.setImage(new Image(String.valueOf(Cooper.class.getResource("Imagenes/coches/miniPepperWhite.png"))));
     }
 
     public void cambiarGrisThunder(ActionEvent actionEvent) {
+        coche.setImage(new Image(String.valueOf(Cooper.class.getResource("Imagenes/coches/miniThunderGray.png"))));
     }
 
     public void cambiarNaranja(ActionEvent actionEvent) {
+        coche.setImage(new Image(String.valueOf(Cooper.class.getResource("Imagenes/coches/miniVolcaninOrange.png"))));
     }
 
+    /**
+     * Este metodo sirve para que el boton de arriba a la izquierda encianda y apague las luces del coche
+     *
+     * @param actionEvent
+     */
     public void cambiarLuces(ActionEvent actionEvent) {
-        if (imagenLuz.getImage().getUrl().equals(imagen.getUrl())){
+        if (imagenLuz.getImage().getUrl().equals(igLuz.getUrl())){
             imagenLuz.setImage(new Image(String.valueOf(Cooper.class.getResource("Imagenes/lucesOn.png"))));
             luces.setImage(new Image(String.valueOf(Cooper.class.getResource("Imagenes/autoLuz.png"))));
         } else {

@@ -8,6 +8,14 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+/**
+ * Cooper
+ * Esta aplicacion sirve para encender las luces de un coche y cambiar el color de ese coche
+ * El coche es un MINI
+ *
+ * @author Lierni
+ * @version 1.0
+ */
 public class Cooper extends Application {
     @Override
     public void start(Stage stage) throws IOException {
