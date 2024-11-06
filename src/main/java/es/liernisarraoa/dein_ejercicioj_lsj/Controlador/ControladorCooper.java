@@ -59,34 +59,74 @@ public class ControladorCooper {
     @FXML
     public ImageView coche;
 
+    /**
+     * El metodo hace que la foto del fondo se cambie al color naranja por lo que da la impresion de que cambia de color, ya que es la misma imagen con distintos colores.
+     *
+     * @param actionEvent
+     */
     public void cambiarRojo(ActionEvent actionEvent) {
         coche.setImage(new Image(String.valueOf(Cooper.class.getResource("Imagenes/coches/miniBlazingRed.png"))));
     }
 
+    /**
+     * El metodo hace que la foto del fondo se cambie al color azul electrico por lo que da la impresion de que cambia de color, ya que es la misma imagen con distintos colores.
+     *
+     * @param actionEvent
+     */
     public void cambiarAzulElectrico(ActionEvent actionEvent) {
         coche.setImage(new Image(String.valueOf(Cooper.class.getResource("Imagenes/coches/miniElectricBlue.png"))));
     }
 
+    /**
+     * El metodo hace que la foto del fondo se cambie al color azul Luxury por lo que da la impresion de que cambia de color, ya que es la misma imagen con distintos colores.
+     *
+     * @param actionEvent
+     */
     public void cambiarAzulLuxury(ActionEvent actionEvent) {
         coche.setImage(new Image(String.valueOf(Cooper.class.getResource("Imagenes/coches/miniLapisluxuryBlue.png"))));
     }
 
+    /**
+     * El metodo hace que la foto del fondo se cambie al color negro por lo que da la impresion de que cambia de color, ya que es la misma imagen con distintos colores.
+     *
+     * @param actionEvent
+     */
     public void cambiarNegro(ActionEvent actionEvent) {
         coche.setImage(new Image(String.valueOf(Cooper.class.getResource("Imagenes/coches/miniMidnightBlack.png"))));
     }
 
+    /**
+     * El metodo hace que la foto del fondo se cambie al color gris moonwalk por lo que da la impresion de que cambia de color, ya que es la misma imagen con distintos colores.
+     *
+     * @param actionEvent
+     */
     public void cambiarGris(ActionEvent actionEvent) {
         coche.setImage(new Image(String.valueOf(Cooper.class.getResource("Imagenes/coches/miniMoonwalkGrey.png"))));
     }
 
+    /**
+     * El metodo hace que la foto del fondo se cambie al color blanco por lo que da la impresion de que cambia de color, ya que es la misma imagen con distintos colores.
+     *
+     * @param actionEvent
+     */
     public void cambiarBlanco(ActionEvent actionEvent) {
         coche.setImage(new Image(String.valueOf(Cooper.class.getResource("Imagenes/coches/miniPepperWhite.png"))));
     }
 
+    /**
+     * El metodo hace que la foto del fondo se cambie al color gris thunder por lo que da la impresion de que cambia de color, ya que es la misma imagen con distintos colores.
+     *
+     * @param actionEvent
+     */
     public void cambiarGrisThunder(ActionEvent actionEvent) {
         coche.setImage(new Image(String.valueOf(Cooper.class.getResource("Imagenes/coches/miniThunderGray.png"))));
     }
 
+    /**
+     * El metodo hace que la foto del fondo se cambie al color naranja por lo que da la impresion de que cambia de color, ya que es la misma imagen con distintos colores.
+     *
+     * @param actionEvent
+     */
     public void cambiarNaranja(ActionEvent actionEvent) {
         coche.setImage(new Image(String.valueOf(Cooper.class.getResource("Imagenes/coches/miniVolcaninOrange.png"))));
     }
